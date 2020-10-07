@@ -1,0 +1,178 @@
+body {
+  font-family: "Gloria Hallelujah", cursive;
+  color: white;
+  background-color: teal;
+}
+.iztablur {
+  display: block;
+  width: 100%;
+  background-repeat: repeat-y;
+}
+.row {
+  border: 0px solid rgba(243, 9, 212, 0.952);
+  top: 4px;
+  position: absolute;
+  width: 100%;
+  left: 15px;
+  height: 930px;
+}
+#column-one {
+  border: 0px solid rgba(233, 229, 8, 0.979);
+}
+#card-today {
+  text-align: center;
+  width: 70%;
+  margin: 35px auto;
+  height: 850px;
+  border: 0px solid rgba(26, 230, 19, 0.966);
+  min-height: -1px;
+}
+.col-sm-8 {
+  border: 0px solid rgba(13, 245, 44, 0.863);
+}
+#result-city {
+  font-size: 45px;
+  border: 0px solid rgba(0, 0, 0, 0.125);
+}
+#now-day {
+  font-size: 27px;
+  border: 0px solid rgba(0, 0, 0, 0.125);
+}
+#degrees,
+#current-time {
+  font-size: 40px;
+  border: 0px solid rgba(0, 0, 0, 0.125);
+}
+#description {
+  font-size: 35px;
+}
+#current-time {
+  margin: -25px auto 18px auto;
+}
+#temp-min-max {
+  font-size: 30px;
+  border: 0px solid rgba(0, 0, 0, 0.125);
+}
+
+#buttom-info {
+  margin: -6px auto;
+}
+
+#celcius-today {
+  font-size: 25px;
+}
+#current-button {
+  font-size: 25px;
+  margin: -13px auto;
+}
+/*.card {
+  width: 70%;
+  margin: 35px auto;
+  height: 850px;
+  border: 3px solid rgba(58, 19, 230, 0.856);
+}*/
+#card-searcher {
+  border: 0px solid rgba(245, 13, 187, 0.932);
+  width: 60%;
+  display: block;
+  margin: 10px auto;
+}
+#search-city {
+  border: 0px solid rgba(7, 7, 7, 0.932);
+  height: 150px;
+}
+#change-city {
+  text-align: center;
+  font-size: 30px;
+  margin: 35px;
+}
+#buttonSearch {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+#city {
+  border-radius: 5px;
+}
+#weather-week {
+  border: 0px solid rgba(245, 13, 187, 0.932);
+  height: 236px;
+  width: 75%;
+  display: block;
+  margin: 60px auto;
+}
+#music {
+  width: 60%;
+  border: 0px solid rgba(245, 13, 187, 0.932);
+  height: 40%;
+  display: block;
+  margin: 10px auto;
+}
+.card-deck {
+  margin: 10px;
+}
+.card {
+  border: 0px solid rgba(0, 0, 0, 0.125);
+  height: 210px;
+}
+#iconToday {
+  display: block;
+  margin: 0px auto;
+}
+.card-body {
+  padding: 5px;
+  text-align: center;
+}
+span {
+  font-weight: bolder;
+}
+.first-line {
+  position: absolute;
+  top: 165px;
+  left: 173px;
+  z-index: 1;
+  width: 915px;
+  border-top: 8px solid white;
+}
+.second-line {
+  position: absolute;
+  top: 475px;
+  left: 282px;
+  z-index: 1;
+  width: 700px;
+  border-top: 8px solid white;
+}
+#today {
+  height: 255px;
+}
+#songs {
+  margin: 5px 45px;
+  text-align: center;
+}
+
+#card-song {
+  max-width: 260px;
+  height: 330px;
+  margin: 10px 45px 10px 45px;
+}
+#song-suggest {
+  padding: 7px;
+  border-bottom: 0px solid rgba(0, 0, 0, 0.125);
+}
+#song-suggest-text {
+  font-size: 22px;
+}
+.card-img-top #imageSong {
+  height: 185px;
+}
+#card-per-day {
+  height: 190px;
+}
+.card-img-top {
+  width: 80%;
+  margin: 5px auto;
+}
+.card-footer {
+  padding: -2px;
+  border-top: 0px solid rgba(0, 0, 0, 0.125);
+  margin: -25px auto;
+}

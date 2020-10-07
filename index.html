@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Gloria+Hallelujah&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <title>BORRADOR Weather App</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <img class="iztablur" src="media/iztablur.jpg" alt="" />
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4" id="column-one">
+          <section id="card-today">
+            <div class="card bg-transparent" id="today">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent" id="result-city">
+                  Mexico City
+                </li>
+                <li class="list-group-item bg-transparent" id="now-day">
+                  Friday
+                </li>
+                <li class="list-group-item bg-transparent" id="degrees">
+                  <span id="current-degrees">16</span>
+                  <a id="celcius-degrees">ºC</a>
+                </li>
+                <li class="list-group-item bg-transparent" id="description">
+                  Sunny
+                </li>
+              </ul>
+              <img
+                srcset="media/amcharts_weather_icons_1.0.0/animated/day.svg"
+                class="card-img-top"
+                alt="..."
+                id="iconToday"
+              />
+              <ul class="list-group list-group-flush" id="buttom-info">
+                <li class="list-group-item bg-transparent" id="temp-min-max">
+                  <p class="celciusToday">16 ºC <br /> <span>21 ºC</span></p>
+                </li>
+                <li class="list-group-item bg-transparent" id="current-time">
+                  11:00 AM
+                </li>
+                <li class="list-group-item bg-transparent">
+                  <button
+                    type="submit"
+                    class="btn btn-outline-info"
+                    id="current-button"
+                  >
+                    Submit
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <div class="col-sm-8" id="column-two">
+          <section id="card-searcher">
+            <div class="card bg-transparent" id="search-city">
+              <div class="card-body">
+                <form action="" class="search" id="change-city">
+                  <input type="text" id="city" placeholder="Enter a city" />
+                  <button
+                    type="submit"
+                    class="btn btn-outline-info"
+                    id="buttonSearch"
+                  >
+                    Search
+                  </button>
+                </form>
+              </div>
+            </div>
+          </section>
+         
+          <section id="weather-week">
+            <div class="card-deck row-cols-md-2" id="week-temp">
+              <div class="card bg-transparent" id="card-per-day">
+                <img
+                  src="media/amcharts_weather_icons_1.0.0/animated/cloudy-day-3.svg"
+                  alt=""
+                  srcset="
+                    media/amcharts_weather_icons_1.0.0/animated/cloudy-day-3.svg
+                  "
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Saturday</h5>
+                  <p class="card-text">16 ºC / <span>23 ºC</span></p>
+                </div>
+              </div>
+
+              <div class="card bg-transparent" id="card-per-day">
+                <img
+                  src="media/amcharts_weather_icons_1.0.0/animated/rainy-4.svg"
+                  alt=""
+                  srcset="
+                    media/amcharts_weather_icons_1.0.0/animated/rainy-4.svg
+                  "
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Sunday</h5>
+                  <p class="card-text">5 ºC / <span>23 ºC</span></p>
+                </div>
+              </div>
+
+              <div class="card bg-transparent" id="card-per-day">
+                <img
+                  src="media/amcharts_weather_icons_1.0.0/animated/snowy-2.svg"
+                  alt=""
+                  srcset="
+                    media/amcharts_weather_icons_1.0.0/animated/snowy-2.svg
+                  "
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Monday</h5>
+                  <p class="card-text">16 ºC / <span>23 ºC</span></p>
+                </div>
+              </div>
+
+              <div class="card bg-transparent" id="card-per-day">
+                <img
+                  src="media/amcharts_weather_icons_1.0.0/animated/night.svg"
+                  alt=""
+                  srcset="media/amcharts_weather_icons_1.0.0/animated/night.svg"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Tuesday</h5>
+                  <p class="card-text">16 ºC / <span>23 ºC</span></p>
+                </div>
+              </div>
+
+              <div class="card bg-transparent" id="card-per-day">
+                <img
+                  src="media/amcharts_weather_icons_1.0.0/animated/cloudy-day-1.svg"
+                  alt=""
+                  srcset="
+                    media/amcharts_weather_icons_1.0.0/animated/cloudy-day-1.svg
+                  "
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Wednesday</h5>
+                  <p class="card-text">16 ºC / <span>23 ºC</span></p>
+                </div>
+              </div>
+
+              <div class="card bg-transparent" id="card-per-day">
+                <img
+                  src="media/amcharts_weather_icons_1.0.0/animated/thunder.svg"
+                  alt=""
+                  srcset="
+                    media/amcharts_weather_icons_1.0.0/animated/thunder.svg
+                  "
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Thursday</h5>
+                  <p class="card-text">16 ºC / <span>23 ºC</span></p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section id="music">
+            <div class="card-deck" id="songs">
+            <div class="card mb-3 bg-transparent" id="card-song">
+              <div class="card-header bg-transparent" id="song-suggest">
+               <h4 id="song-suggest-text">Song of the day</h4>
+              </div>
+              <div class="card-body text-success">
+                <img src="media/monday.jpg" class="card-img-top" alt="..." id="imageSong" />
+              </div>
+              <div class="card-footer bg-transparent">
+                <h5 class="card-title">Monday Morning</h5>
+                <p class="card-text">by <br />Christina Aguilera</p>
+              </div>
+            </div>
+            <div class="card border-success mb-3 bg-transparent" id="card-song">
+              <div class="card-header bg-transparent border-success" id="song-suggest">
+                <h4 id="song-suggest-text">Song by the mood</h4>
+              </div>
+              <div class="card-body text-success">
+                <img src="media/monday-luismi.jpg" class="card-img-top" alt="..." id="imageSong" />
+              </div>
+              <div class="card-footer bg-transparent">
+                <h5 class="card-title">Sunny</h5>
+                <p class="card-text">by <br/>Luis Miguel</p>
+              </div>
+            </div>
+            </div>
+            </section>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
