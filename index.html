@@ -52,7 +52,10 @@
               />
               <ul class="list-group list-group-flush" id="buttom-info">
                 <li class="list-group-item bg-transparent" id="temp-min-max">
-                  <p class="celciusToday">16 ºC <br /> <span>21 ºC</span></p>
+                  <p class="celciusToday">
+                    16 ºC <br />
+                    <span>21 ºC</span>
+                  </p>
                 </li>
                 <li class="list-group-item bg-transparent" id="current-time">
                   11:00 AM
@@ -88,7 +91,7 @@
               </div>
             </div>
           </section>
-         
+
           <section id="weather-week">
             <div class="card-deck row-cols-md-2" id="week-temp">
               <div class="card bg-transparent" id="card-per-day">
@@ -180,35 +183,73 @@
               </div>
             </div>
           </section>
-          
+
           <section id="music">
             <div class="card-deck" id="songs">
-            <div class="card mb-3 bg-transparent" id="card-song">
-              <div class="card-header bg-transparent" id="song-suggest">
-               <h4 id="song-suggest-text">Song of the day</h4>
+              <div class="card mb-3 bg-transparent" id="card-song">
+                <div class="card-header bg-transparent" id="song-suggest">
+                  <h4 id="song-suggest-text">Song of the day</h4>
+                </div>
+                <div class="card-body text-success">
+                  <img
+                    src="media/monday.jpg"
+                    class="card-img-top"
+                    alt="..."
+                    id="imageSong"
+                  />
+                </div>
+                <div class="card-footer bg-transparent">
+                  <h5 class="card-title">Monday Morning</h5>
+                  <p class="card-text">by <br />Christina Aguilera</p>
+                </div>
               </div>
-              <div class="card-body text-success">
-                <img src="media/monday.jpg" class="card-img-top" alt="..." id="imageSong" />
-              </div>
-              <div class="card-footer bg-transparent">
-                <h5 class="card-title">Monday Morning</h5>
-                <p class="card-text">by <br />Christina Aguilera</p>
+              <div
+                class="card border-success mb-3 bg-transparent"
+                id="card-song"
+              >
+                <div
+                  class="card-header bg-transparent border-success"
+                  id="song-suggest"
+                >
+                  <h4 id="song-suggest-text">Song by the mood</h4>
+                </div>
+                <div class="card-body text-success">
+                  <img
+                    src="media/monday-luismi.jpg"
+                    class="card-img-top"
+                    alt="..."
+                    id="imageSong"
+                  />
+                </div>
+                <div class="card-footer bg-transparent">
+                  <h5 class="card-title">Sunny</h5>
+                  <p class="card-text">by <br />Luis Miguel</p>
+                </div>
               </div>
             </div>
-            <div class="card border-success mb-3 bg-transparent" id="card-song">
-              <div class="card-header bg-transparent border-success" id="song-suggest">
-                <h4 id="song-suggest-text">Song by the mood</h4>
-              </div>
-              <div class="card-body text-success">
-                <img src="media/monday-luismi.jpg" class="card-img-top" alt="..." id="imageSong" />
-              </div>
-              <div class="card-footer bg-transparent">
-                <h5 class="card-title">Sunny</h5>
-                <p class="card-text">by <br/>Luis Miguel</p>
+          </section>
+
+          <section id="footer">
+            <div
+              class="media position-relative bg-transparent"
+              id="github-footer"
+            >
+              <img
+                src="media/github-icon.jpg"
+                class="card-img"
+                alt="..."
+                id="github-icon"
+              />
+              <div class="media-body" id="github-text">
+                <h5 class="mt-0">Monica Github</h5>
+                <a
+                  href="https://github.com/MoszykBloo/Weather-project"
+                  target="blank"
+                  id="github-link"
+                  >MoszykBloo/Weather-project</a
+                >
               </div>
             </div>
-            </div>
-            </section>
           </section>
         </div>
       </div>
